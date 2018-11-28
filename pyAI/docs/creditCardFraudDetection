@@ -1,0 +1,10 @@
+import docs.readFiles as rf
+
+if __name__ == '__main__':
+    print("Mock Credit Card Fraud Detection")
+    # READ Files
+    bank = rf.ReadFile(name_of_competition='Bank', name_of_file='creditcard', format_of_file='csv')
+
+    bank_df = bank.file
+    print(bank_df.info())
+
